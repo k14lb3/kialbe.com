@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Sauce Code Pro';
+    src: url('/fonts/sauce-code-pro.ttf') format('ttf');
+  }
+
+  :root {
+    --foreground: #000000;
+    --background: #ffffff;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --foreground: #ffffff;
+      --background: #000000;
+    }
+  }
+
+  html {
+    @apply font-mono bg-background text-foreground;
+  }
+}
