@@ -10,7 +10,7 @@ export default (({ Component }) => {
         <title>Karl Ivan Alberto</title>
         <link rel='stylesheet' href='/styles/index.css' />
       </head>
-      <body>
+      <body className='flex flex-col justify-center items-center w-full max-w-3xl py-4 [&>*]:w-full'>
         <Component />
       </body>
     </html>

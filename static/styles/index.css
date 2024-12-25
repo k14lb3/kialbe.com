@@ -21,6 +21,6 @@
   }
 
   html {
-    @apply font-mono bg-background text-foreground;
+    @apply flex justify-center font-mono bg-background text-foreground;
   }
 }
