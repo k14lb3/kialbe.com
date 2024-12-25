@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'preact';
-import { DETAIL, ICONS } from '@lib';
+import { DETAIL, ICONS, TRIVIA } from '@lib';
 import { Link } from '@components';
 
 const Icon: FunctionComponent<
@@ -64,6 +64,25 @@ const Introduction: FunctionComponent = () => {
   );
 };
 
+const Trivia: FunctionComponent = () => {
+  return (
+    <section>
+      <header>
+        <h2 className='w-fit px-2 text-2xl font-bold uppercase border-2 border-foreground'>
+          Trivia
+        </h2>
+      </header>
+      <main className='mt-2'>
+        <ul className='flex flex-col list-square pl-4'>
+          {TRIVIA.map((trivia) => {
+            return <li>{trivia}</li>;
+          })}
+        </ul>
+      </main>
+    </section>
+  );
+};
+
 export default (() => {
   return (
     <main>
@@ -74,6 +93,7 @@ export default (() => {
           </h1>
         </header>
         <Introduction />
+        <Trivia />
       </article>
     </main>
   );

@@ -15,6 +15,9 @@ export default {
       fontFamily: {
         'mono': ['Sauce Code Pro', 'monospace'],
       },
+      listStyleType: {
+        square: 'square',
+      },
       animation: {
         bounce: 'bounce 1s infinite',
         wiggle: 'wiggle 1s ease-in-out infinite',
