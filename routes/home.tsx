@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'preact';
-import { DETAIL, ICONS, TRIVIA } from '@lib';
+import { PERSONAL_DETAILS, ICONS, TRIVIA } from '@lib';
 import { Link } from '@components';
 
 const Icon: FunctionComponent<
@@ -52,7 +52,7 @@ const Introduction: FunctionComponent = () => {
         <p>&nbsp;</p>
         <p>
           Contact me at{' '}
-          <Link href={`mailto:${DETAIL.EMAIL}`}>{DETAIL.EMAIL}</Link>.
+          <Link href={`mailto:${PERSONAL_DETAILS.EMAIL}`}>{PERSONAL_DETAILS.EMAIL}</Link>.
         </p>
       </div>
       <div className='flex-1 flex justify-center'>
@@ -89,7 +89,7 @@ export default (() => {
       <article className='flex flex-col gap-4'>
         <header>
           <h1 className='w-fit px-2 text-3xl font-bold uppercase border-2 border-foreground'>
-            {DETAIL.FULL_NAME}
+            {PERSONAL_DETAILS.FULL_NAME}
           </h1>
         </header>
         <Introduction />
