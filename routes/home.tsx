@@ -44,8 +44,8 @@ const Introduction: FunctionComponent = () => {
         <p>
           <Icon animate='pulse'>{ICONS.FIRE}</Icon> Passionate about{' '}
           <Icon animate='wiggle'>{ICONS.HAMMER}</Icon> building{' '}
-          <Icon animate='bounce'>{ICONS.FACE_GRIN_STARS}</Icon> cool and{' '}
-          <Icon animate='spin'>{ICONS.FACE_GRIN_TONGUE}</Icon> goofy stuff with
+          <Icon animate='bounce'>{ICONS.EMOTICON_COOL}</Icon> cool and{' '}
+          <Icon animate='spin'>{ICONS.EMOTICON_TONGUE}</Icon> goofy stuff with
           {' '}
           <Icon animate='shake'>{ICONS.CODE}</Icon> code.
         </p>
