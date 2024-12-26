@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'preact';
-import { PERSONAL_DETAILS, ICONS, TRIVIA } from '@lib';
+import { ICONS, PERSONAL_DETAILS, TRIVIA } from '@lib';
 import { Link } from '@components';
 
 const Icon: FunctionComponent<
@@ -52,7 +52,9 @@ const Introduction: FunctionComponent = () => {
         <p>&nbsp;</p>
         <p>
           Contact me at{' '}
-          <Link href={`mailto:${PERSONAL_DETAILS.EMAIL}`}>{PERSONAL_DETAILS.EMAIL}</Link>.
+          <Link href={`mailto:${PERSONAL_DETAILS.EMAIL}`}>
+            {PERSONAL_DETAILS.EMAIL}
+          </Link>.
         </p>
       </div>
       <div className='flex-1 flex justify-center'>
