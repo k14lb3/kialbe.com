@@ -1,4 +1,5 @@
 import { Link } from '@components';
+import { ICONS } from '@lib';
 
 export const TRIVIA = [
   <>
@@ -12,9 +13,9 @@ export const TRIVIA = [
       eeffoc
     </Link>.
   </>,
-  'I like watching anime and playing games.',
+  `I like watching ${ICONS.ANIMATION} anime and playing ${ICONS.MOUSE} games.`,
   <>
-    My favorite quote is{' '}
+    My favorite {ICONS.QUOTE} quote is{' '}
     <Link
       className='italic'
       href='https://myanimelist.net/anime/46352/Blue_Period'
