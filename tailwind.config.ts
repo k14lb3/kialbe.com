@@ -13,7 +13,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        'mono': ['Sauce Code Pro', 'monospace'],
+        'mono': ['Sauce Code Pro', 'Symbols', 'monospace'],
       },
       listStyleType: {
         square: 'square',
