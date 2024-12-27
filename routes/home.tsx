@@ -1,6 +1,12 @@
 import { FunctionComponent } from 'preact';
-import { ICONS, PERSONAL_DETAILS, TRIVIA } from '@lib';
+import { ICONS, PERSONAL_DETAILS, TRIVIA, URLS } from '@lib';
 import { Link } from '@components';
+
+const LINKS: Record<'url' | 'label', string>[] = [
+  { url: URLS.GITHUB, label: `${ICONS.GITHUB} GitHub` },
+  { url: URLS.LINKEDIN, label: `${ICONS.LINKEDIN} LinkedIn` },
+  { url: URLS.YOUTUBE, label: `${ICONS.YOUTUBE} YouTube` },
+] as const;
 
 const Icon: FunctionComponent<
   {
@@ -48,14 +54,24 @@ const Introduction: FunctionComponent = () => {
           <Icon animate='spin'>{ICONS.EMOTICON_TONGUE}</Icon> goofy stuff with
           {' '}
           <Icon animate='shake'>{ICONS.CODE}</Icon> code.
-        </p>
-        <p>&nbsp;</p>
-        <p>
+          <br />
+          <br />
           Contact me at{' '}
           <Link href={`mailto:${PERSONAL_DETAILS.EMAIL}`}>
             {PERSONAL_DETAILS.EMAIL}
           </Link>.
+          <br />
+          <br />
         </p>
+        <ul className='flex gap-4'>
+          {LINKS.map((link) => {
+            return (
+              <li>
+                <Link href={link.url}>{link.label}</Link>
+              </li>
+            );
+          })}
+        </ul>
       </div>
       <div className='flex-1 flex justify-center'>
         <div className='relative w-48 aspect-square bg-background border-4 border-foreground grayscale'>
