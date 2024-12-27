@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'preact';
 import { ICONS, PERSONAL_DETAILS, URLS } from '@lib';
-import { Link } from '@components';
+import { H1, H2, Link } from '@components';
 
 const LINKS: Record<'url' | 'label', string>[] = [
   { url: URLS.GITHUB, label: `${ICONS.GITHUB} GitHub` },
@@ -86,9 +86,9 @@ const Trivia: FunctionComponent = () => {
   return (
     <section>
       <header>
-        <h2 className='w-fit px-2 text-2xl font-bold uppercase border-2 border-foreground'>
+        <H2 className='text-2xl'>
           Trivia
-        </h2>
+        </H2>
       </header>
       <main className='mt-2'>
         <ul className='flex flex-col list-square pl-4'>
@@ -125,9 +125,9 @@ export default (() => {
     <main>
       <article className='flex flex-col gap-4'>
         <header>
-          <h1 className='w-fit px-2 text-3xl font-bold uppercase border-2 border-foreground'>
+          <H1 className='text-3xl'>
             {PERSONAL_DETAILS.FULL_NAME}
-          </h1>
+          </H1>
         </header>
         <Introduction />
         <Trivia />

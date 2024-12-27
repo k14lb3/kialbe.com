@@ -1,13 +1,13 @@
 import { FunctionComponent } from 'preact';
-import { PageInProgressImage } from '@components';
+import { H1, PageInProgressImage } from '@components';
 
 export default (() => {
   return (
     <>
       <header className='flex flex-col'>
-        <h1 className='w-fit px-2 text-3xl font-bold uppercase border-2 border-foreground'>
+        <H1 className='text-3xl'>
           Projects
-        </h1>
+        </H1>
       </header>
       <main className='mt-4'>
         <PageInProgressImage />
