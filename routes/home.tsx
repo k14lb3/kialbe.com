@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'preact';
-import { ICONS, PERSONAL_DETAILS, TRIVIA, URLS } from '@lib';
+import { ICONS, PERSONAL_DETAILS, URLS } from '@lib';
 import { Link } from '@components';
 
 const LINKS: Record<'url' | 'label', string>[] = [
@@ -92,9 +92,28 @@ const Trivia: FunctionComponent = () => {
       </header>
       <main className='mt-2'>
         <ul className='flex flex-col list-square pl-4'>
-          {TRIVIA.map((trivia) => {
-            return <li>{trivia}</li>;
-          })}
+          <li>
+            I use <Link href={URLS.ARCH_LINUX}>{ICONS.ARCH}rch</Link> and{'  '}
+            <Link href={URLS.NEOVIM}>{ICONS.NEOVIM}eovim</Link>{' '}
+            <Link href={URLS.BTW_I_USE_ARCH_MEME}>BTW</Link>.
+          </li>
+          <li>
+            I drink a lot of {ICONS.COFFEE}{' '}
+            <Link href={URLS.COFFEE_SPELLED_BACKWARDS_IS_EEFFOC}>
+              eeffoc
+            </Link>.
+          </li>
+          <li>
+            I like watching {ICONS.ANIMATION} anime and playing {ICONS.MOUSE}
+            {' '}
+            games.
+          </li>
+          <li>
+            My favorite {ICONS.QUOTE} quote is{' '}
+            <Link className='italic' href={URLS.BLUE_PERIOD_ANIME}>
+              "Hard workers who do things they like are unstoppable."
+            </Link>.
+          </li>
         </ul>
       </main>
     </section>
