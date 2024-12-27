@@ -3,6 +3,7 @@ import { ICONS, PERSONAL_DETAILS, URLS } from '@lib';
 import { H1, H2, Link } from '@components';
 
 const LINKS: Record<'url' | 'label', string>[] = [
+  { url: URLS.YOUTUBE, label: `${ICONS.FILE} Resume` },
   { url: URLS.GITHUB, label: `${ICONS.GITHUB} GitHub` },
   { url: URLS.LINKEDIN, label: `${ICONS.LINKEDIN} LinkedIn` },
   { url: URLS.YOUTUBE, label: `${ICONS.YOUTUBE} YouTube` },

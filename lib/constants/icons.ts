@@ -4,6 +4,7 @@ export const ICONS = {
   EMOTICON_COOL: '󰱫',
   EMOTICON_TONGUE: '󰇹',
   CODE: '󰅴',
+  FILE: '󰈙',
   GITHUB: '󰊤',
   LINKEDIN: '󰌻',
   YOUTUBE: '󰗃',
