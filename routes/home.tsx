@@ -68,7 +68,9 @@ const Introduction: FunctionComponent = () => {
           {LINKS.map((link) => {
             return (
               <li>
-                <Link href={link.url}>{link.label}</Link>
+                <Link className='text-nowrap' href={link.url}>
+                  {link.label}
+                </Link>
               </li>
             );
           })}
