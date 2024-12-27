@@ -3,15 +3,17 @@ import { H1, PageInProgressImage } from '@components';
 
 export default (() => {
   return (
-    <>
-      <header className='flex flex-col'>
-        <H1 className='text-4xl'>
-          Projects
-        </H1>
-      </header>
-      <main className='mt-4'>
-        <PageInProgressImage />
-      </main>
-    </>
+    <main>
+      <article>
+        <header>
+          <H1 className='text-4xl'>
+            Projects
+          </H1>
+        </header>
+        <main className='mt-4'>
+          <PageInProgressImage />
+        </main>
+      </article>
+    </main>
   );
 }) satisfies FunctionComponent;
