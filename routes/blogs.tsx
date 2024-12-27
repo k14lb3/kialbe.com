@@ -5,7 +5,7 @@ export default (() => {
   return (
     <>
       <header className='flex flex-col'>
-        <H1 className='text-3xl'>
+        <H1 className='text-4xl'>
           Blogs
         </H1>
       </header>

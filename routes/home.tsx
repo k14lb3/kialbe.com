@@ -86,7 +86,7 @@ const Trivia: FunctionComponent = () => {
   return (
     <section>
       <header>
-        <H2 className='text-2xl'>
+        <H2 className='text-3xl'>
           Trivia
         </H2>
       </header>
@@ -125,7 +125,7 @@ export default (() => {
     <main>
       <article className='flex flex-col gap-4'>
         <header>
-          <H1 className='text-3xl'>
+          <H1 className='text-4xl'>
             {PERSONAL_DETAILS.FULL_NAME}
           </H1>
         </header>
