@@ -8,7 +8,9 @@ export const PageInProgressImage: FunctionComponent = () => {
       <p className='absolute inline-block top-14 left-10 text-xl text-center'>
         the page<br />is still<br />being built
       </p>
-      <p className='absolute inline-block bottom-0 left-5 text-2xl'>keep scrolling</p>
+      <p className='absolute inline-block bottom-0 left-5 text-2xl'>
+        keep browsing
+      </p>
     </div>
   );
 };
