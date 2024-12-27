@@ -74,7 +74,7 @@ const Introduction: FunctionComponent = () => {
         </ul>
       </div>
       <div className='flex-1 flex justify-center'>
-        <div className='relative w-48 aspect-square bg-background border-4 border-foreground grayscale'>
+        <div className='relative h-48 aspect-square bg-background border-4 border-foreground grayscale'>
           <img src='/images/me.png' />
         </div>
       </div>
