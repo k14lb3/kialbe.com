@@ -10,13 +10,11 @@ const Navigation: FunctionComponent<Omit<PageProps, 'Component'>> = (
     <nav>
       <ul className='flex justify-end gap-4 font-bold uppercase'>
         {NAVIGATIONS.map((navigation) => {
-          const isIn = `/${navigation}` === url.pathname;
-
           return (
             <li>
               <a
                 className={`block py-1 border-x-2 before:content-['_'] before:py-1 before:whitespace-pre after:content-['_'] after:py-1 after:whitespace-pre${
-                  !isIn
+                  `/${navigation}` !== url.pathname
                     ? ' border-background'
                     : ' border-foreground before:border-y-2 before:border-foreground after:border-y-2 after:border-foreground'
                 } cursor-pointer`}
