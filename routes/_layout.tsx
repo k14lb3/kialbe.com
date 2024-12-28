@@ -8,7 +8,7 @@ const Navigation: FunctionComponent<Omit<PageProps, 'Component'>> = (
 ) => {
   return (
     <nav>
-      <ul className='flex justify-end gap-4 font-bold uppercase'>
+      <ul className='flex min-[416px]:justify-between min-[519px]:justify-end gap-4 font-bold uppercase'>
         {NAVIGATIONS.map((navigation) => {
           return (
             <li>
