@@ -2,7 +2,7 @@ import { FunctionComponent } from 'preact';
 
 export const PageNotFoundImage: FunctionComponent = () => {
   return (
-    <div className='relative w-80 aspect-square grayscale mx-auto font-bold border-4 border-foreground overflow-hidden'>
+    <div className='relative h-full max-h-80 aspect-square grayscale mx-auto font-bold border-4 border-foreground overflow-hidden [&>*]:text-nowrap'>
       <img src='/images/patrick.png' />
       <p className='absolute inline-block top-1/2 left-4 translate-y-[-50%] text-7xl'>
         p<br />a<br />g<br />e<br />

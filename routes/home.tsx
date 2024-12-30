@@ -46,7 +46,7 @@ const Icon: FunctionComponent<
 
 const Introduction: FunctionComponent = () => {
   return (
-    <section className="grid [grid-template-areas:'summary_summary''image_links'] min-[416px]:[grid-template-areas:'summary_image''links_links'] min-[625px]:flex gap-4">
+    <section className="grid [grid-template-areas:'summary''image''links'] min-[289px]:[grid-template-areas:'summary_summary''image_links'] min-[416px]:[grid-template-areas:'summary_image''links_links'] min-[625px]:flex gap-4">
       <div className='contents min-[625px]:flex min-[625px]:flex-col min-[625px]:flex-[0_0_58%]'>
         <p className='[grid-area:summary]'>
           <Icon animate='pulse'>{ICONS.FIRE}</Icon> Passionate about{' '}
@@ -65,7 +65,7 @@ const Introduction: FunctionComponent = () => {
             {PERSONAL_DETAILS.EMAIL}
           </Link>.
         </p>
-        <ul className='[grid-area:links] flex flex-col min-[416px]:flex-row min-[625px]:mt-5 justify-between min-[625px]:justify-start gap-4'>
+        <ul className='[grid-area:links] grid grid-cols-2 min-[289px]:flex min-[289px]:flex-col min-[416px]:flex-row min-[625px]:mt-5 justify-between min-[625px]:justify-start gap-4'>
           {LINKS.map((link) => {
             return (
               <li>
@@ -77,8 +77,8 @@ const Introduction: FunctionComponent = () => {
           })}
         </ul>
       </div>
-      <div className='[grid-area:image] place flex-1 flex justify-center'>
-        <div className='relative h-48 aspect-square bg-background border-4 border-foreground grayscale'>
+      <div className='[grid-area:image] flex-1 flex justify-center'>
+        <div className='relative min-[336px]:h-48 aspect-square bg-background border-4 border-foreground grayscale'>
           <img src='/images/me.png' />
         </div>
       </div>
@@ -129,7 +129,7 @@ export default (() => {
     <main>
       <article className='flex flex-col gap-4'>
         <header>
-          <H1 className='text-4xl break-all'>
+          <H1 className='text-4xl text-center'>
             {PERSONAL_DETAILS.FULL_NAME}
           </H1>
         </header>

@@ -6,7 +6,7 @@ export default (() => {
     <main>
       <article>
         <header>
-          <H1 className='text-4xl'>
+          <H1 className='w-full min-[297px]:w-fit text-4xl text-center'>
             Projects
           </H1>
         </header>
